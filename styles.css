@@ -1,62 +1,62 @@
 body {
-  text-align: center;
-  background-color: #283149;
+  background-image: url(./images/Drumkit.jpeg);
+  /* background-position: center; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 5rem;
-  color: #DBEDF3;
+  font-size: 4rem;
+  color:yellow;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 #0419da;
+  margin: 0;
+  top: 10%;
 
 }
 
 footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
+  color: yellow;
 }
 
 .w {
-  background-image: url(images/tom1.png);
-
+  background-image: url("images/tom1.png");
 }
 
 .a {
-  background-image: url(images/tom2.png);
-
+  background-image: url("images/tom2.png");
 }
 
 .s {
-  background-image: url(images/tom3.png);
-
+  background-image: url("images/tom3.png");
 }
 
 .d {
-  background-image: url(images/tom4.png);
-
+  background-image: url("images/tom4.png");
 }
 
 .j {
-  background-image: url(images/crash.png);
-
+  background-image: url("images/snare.png");
 }
 
 .k {
-  background-image: url(images/kick.png);
+  background-image: url("images/crash.png");
 }
 
 .l {
-  background-image: url(images/snare.png);
-
+  background-image: url("images/kick.png");
 }
 
-.set {
-  margin: 10% auto;
-}
+.set1 .drum {
+  margin: 100px 10px 40px 40px;
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+}
+.set2 .drum {
+  margin: 10px 40px;
+
 }
 
 .pressed {
@@ -70,8 +70,8 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #9fa4b3;
-  font-size: 5rem;
+  border: 10px solid #404B69;
+  font-size: 4rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
   font-weight: 900;
@@ -79,12 +79,35 @@ footer {
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   text-align: center;
-  margin: 10px;
   background-color: white;
 }
-.drum:hover{ 
-  transform: scale(1.1);
-}
+.play,.stop{
+  height: 70px;
+  width: 70px;
+  margin: 50px 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color:green; 
+  outline: none;
+  border: 5px solid #404B69;
+  font-family: 'Arvo', cursive;
+  color: white;
+
+  }
+  .stop{
+    background-color: rgb(3, 28, 255); 
+  }
+  i{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+  footer{
+    position: fixed;
+    bottom: 5%;
+    color: yellow;
+  
+  }
+
